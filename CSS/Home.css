@@ -1,0 +1,26 @@
+.header-img-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.header-img{
+    object-fit: contain;
+    width: 70%;
+    height:300px
+}
+
+.head-and-img-container{
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+.content-container-header{
+    padding: 5px 20px
+}
+.content-container-image{
+    display: flex;
+    justify-content: center;
+}
+.content-container-image{
+    min-height: 300px;
+}

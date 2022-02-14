@@ -1,0 +1,145 @@
+body {
+    margin:0;
+    width: auto;
+}
+
+nav{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top:0;
+    left: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+}
+.nav-item{
+    border: 1px solid black;
+    padding: 15px 20px;
+    list-style-type: none;
+}
+.nav-item:hover{
+    background-color: #c3c3c3;
+}
+#nav-item-hovered-id:hover{
+    background-color: #c3c3c3;
+}
+.nav-bar-logo{
+    width:150px;
+}
+.sm-hamburger, .md-hamburger{
+    margin-right: 10px;
+    display: none;
+    padding: 15px 20px;
+}
+.hamburger-list-item{
+    list-style-type: none;
+}
+@media (max-width: 768px){
+    .hide-on-md-size{
+        display: none !important;
+    }
+    .md-hamburger{
+        display: block;
+    }
+    nav{
+        left:0
+    }
+}
+@media (max-width: 576px) {
+    .md-hamburger{
+        display: none !important;
+    }
+    .hide-on-sm-size{
+        display: none !important;
+    }
+    .sm-hamburger{
+        display: block;
+    }
+    nav{
+        left:0
+    }
+}
+.nav-bar-habmurger-md-container, .nav-bar-habmurger-sm-container{
+    /* display: none; */
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    top: 85px;
+    left: 0;
+    width: 200px;
+    height:100%;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.hamburger-button{
+    background-color: transparent;
+    border: none;
+}
+.nav-bar-hamburger-btn-container span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    background-color: black;
+    border-radius: 3px;
+    
+    z-index: 1;
+}
+.hamburger-content-item{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+
+.drpdwn-container{
+    position: relative;
+    display: inline-block;
+}
+.drpdwn-content-container{
+    width: 180px;
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    border: 1px solid black;
+    padding: 0px;
+    background-color: #EFF2EB;
+}
+.drpdwn-item{
+    font-size: 16px;
+    padding: 12px;
+    display: flex;
+    border: 1px solid black;
+}
+.drpdwn-item:hover{
+    background-color: #c3c3c3;
+    border: 1px solid black;
+}
+
+.drpdwn-container:hover .drpdwn-content-container{
+    display: block;
+}
+
+footer{
+    width:100%;
+    height: 200px;
+    background-color: #070742;
+    padding-top: 20px;
+}
+.footer-container{
+    text-align: center;
+}
+.social-network-icon-link{
+    max-height: 50px;
+    padding: 0px 10px;
+}
+.footer-text{
+    color:lightcyan;
+}
