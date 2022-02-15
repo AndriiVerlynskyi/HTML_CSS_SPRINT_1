@@ -1,7 +1,50 @@
 .header-img-container{
+    position: relative;
     margin-top: 100px;
     display: flex;
     justify-content: center;
+}
+.header-text{
+    position: absolute;
+    left: 30%;
+    color: white;
+    animation-name: text-outcome;
+    animation-duration: 1s;
+}
+@keyframes text-outcome {
+    0%{
+        top: -17px;
+    }
+    10%{
+        top: -15px;
+    } 
+    20%{
+        top: -13px;
+    } 
+    30%{
+        top: -10px;
+    }
+    40%{
+        top: -8px;
+    }
+    50%{
+        top: -5px;
+    }
+    60%{
+        top: -4px;
+    }
+    70%{
+        top: -3px;
+    }
+    80%{
+        top: -2px
+    }
+    90%{
+      top: -1px;  
+    }
+    100%{
+        top: 0px;
+    }
 }
 .header-img{
     object-fit: contain;
