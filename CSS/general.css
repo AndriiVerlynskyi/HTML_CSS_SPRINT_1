@@ -171,7 +171,7 @@ footer{
 }
 
 .nav-bar-logo{
-    animation:spin 1.5s linear infinite;
+    animation:spin 1.5s linear ;
     animation-iteration-count: 2;
 }
 
